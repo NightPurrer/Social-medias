@@ -1,0 +1,66 @@
+#include"dynamic_menu.bgt"
+void main()
+{
+show_game_window("Social medias1.2");
+mainmenu();
+}
+void mainmenu()
+{
+dynamic_menu menu;
+menu.wrap=false;
+menu.allow_escape=true;
+menu.add_item_tts("Redownload application");
+menu.add_item_tts("Any audio");
+menu.add_item_tts("Audio games");
+menu.add_item_tts("Facebook");
+menu.add_item_tts("Facebook mobile");
+menu.add_item_tts("Translator");
+menu.add_item_tts("Twitter");
+menu.add_item_tts("Youtube");
+menu.add_item_tts("Exit");
+int mres=menu.run("Main menu",true);
+if(mres==0||mres==9)
+{
+exit();
+}
+if(mres==1)
+{
+bool result=run("up.bat", "", true, true);
+mainmenu();
+}
+if(mres==2)
+{
+bool result=run("aa.bat", "", true, true);
+mainmenu();
+}
+if(mres==3)
+{
+bool result=run("ag.bat", "", true, true);
+mainmenu();
+}
+if(mres==4)
+{
+bool result=run("fb.bat", "", true, true);
+mainmenu();
+}
+if(mres==5)
+{
+bool result=run("fbm.bat", "", true, true);
+mainmenu();
+}
+if(mres==6)
+{
+bool result=run("gt.bat", "", true, true);
+mainmenu();
+}
+if(mres==7)
+{
+bool result=run("tw.bat", "", true, true);
+mainmenu();
+}
+if(mres==8)
+{
+bool result=run("yt.bat", "", true, true);
+mainmenu();
+}
+}

@@ -1,0 +1,12 @@
+1.0
+First version of the application in the Polish language.
+1.1:
+28 feb 2017.
+Added the any audio page.
+Translated application to english language.
+1.2
+24 Aug 2017
+Removed not existing audio forum.
+Added Audiogames.net forum.
+Added Normal Facebook.
+Changed redownload application to the working update page.
